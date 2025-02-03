@@ -1,0 +1,16 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.test1 {
+  color: red;
+}
+
+.blue-box {
+  padding: 12rem;
+  background-color: blue;
+  border-radius: 0%;
+}
