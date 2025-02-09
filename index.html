@@ -1,18 +1,628 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="index.css" rel="stylesheet" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="main">
-      <h1 class="test1">heeeeeds</h1>
-      <h1 class="test1">heeeeeds</h1>
-    </div>
+    <title>PlayBook Email</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Base styles */
+      body {
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+        font-family: 'Manrope', Verdana, sans-serif;
+      }
 
-    <!-- blue color box -->
-    <div class="blue-box"></div>
+      /* Reset styles for email clients */
+      img {
+        border: 0;
+        height: auto;
+        line-height: 100%;
+        outline: none;
+        text-decoration: none;
+        -ms-interpolation-mode: bicubic;
+      }
+
+      table {
+        border-collapse: collapse !important;
+      }
+
+      /* Container styles */
+      .main-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* Responsive styles */
+      @media only screen and (max-width: 600px) {
+        .hide-on-mobile {
+          display: none !important;
+        }
+        .show-on-mobile {
+          display: block !important;
+        }
+        .mobile-padding {
+          padding: 20px !important;
+        }
+        .mobile-text {
+          font-size: 14px !important;
+        }
+        .main-container {
+          padding: 10px !important;
+        }
+      }
+
+      @media only screen and (min-width: 601px) {
+        .hide-on-desktop {
+          display: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body style="margin: 0; padding: 0; background-color: #fff">
+    <div style="margin: 0 auto; max-width: 600px; width: 100%">
+      <div style="padding: 40px 40px 60px 40px; background-color: #2352d8">
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/playbook-f237a.appspot.com/o/image.png?alt=media&token=4b202fcc-2043-4e90-a367-43a2fa27930e"
+          alt="PlayBook Logo"
+          style="max-width: 100%; height: auto"
+        />
+      </div>
+    </div>
+    <!-- logo and header seaction -->
+
+    <!-- Main Container -->
+    <table
+      role="presentation"
+      cellpadding="0"
+      cellspacing="0"
+      width="100%"
+      style="margin: 0 auto; max-width: 600px; padding: 20px"
+    >
+      <tr>
+        <td>
+          <table
+            role="presentation"
+            cellpadding="0"
+            cellspacing="0"
+            width="100%"
+            style="background-color: #2352d8; border-radius: 16px 16px 0 0"
+          >
+            <tr>
+              <td style="padding: 40px 40px 0 40px" align="center">
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/playbook-f237a.appspot.com/o/image.png?alt=media&token=4b202fcc-2043-4e90-a367-43a2fa27930e"
+                  alt="PlayBook Logo"
+                  style="max-width: 100%; height: auto"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 40px 40px 40px 40px" align="center">
+                <p
+                  style="
+                    font-family: 'Manrope', Verdana, sans-serif;
+                    color: #fff;
+                    font-size: 24px;
+                    margin: 0;
+                  "
+                >
+                  Email Confirmation
+                </p>
+                <p
+                  style="
+                    font-family: 'Manrope', Verdana, sans-serif;
+                    color: #fff;
+                    font-size: 14px;
+                    margin-top: 8px;
+                    padding: 0 20px;
+                  "
+                >
+                  You have successfully completed the venue payout process. You
+                  can check your venue payout details below.
+                </p>
+              </td>
+            </tr>
+          </table>
+
+          <table
+            role="presentation"
+            cellpadding="0"
+            cellspacing="0"
+            width="100%"
+            style="background-color: #f7f9fa"
+          >
+            <tr>
+              <td style="padding: 32px 24px">
+                <!-- Greeting -->
+                <p
+                  style="
+                    font-family: 'Manrope', Verdana, sans-serif;
+                    color: #181f26;
+                    font-size: 14px;
+                    font-weight: bold;
+                    margin: 0 0 16px 0;
+                  "
+                >
+                  Hi (Venue owner name),
+                </p>
+
+                <!-- Description -->
+                <p
+                  style="
+                    font-family: 'Manrope', Verdana, sans-serif;
+                    color: #8b98a6;
+                    font-size: 14px;
+                    margin: 0 0 24px 0;
+                    line-height: 1.5;
+                  "
+                >
+                  Lorem ipsum dolor sit amet consectetur. Nunc varius posuere a
+                  facilisis pellentesque sagittis.
+                </p>
+
+                <!-- Venue Details with proper spacing -->
+                <table
+                  role="presentation"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                  style="margin: 0 0 24px 0"
+                >
+                  <tr>
+                    <td style="padding-bottom: 8px">
+                      <p
+                        style="
+                          font-family: 'Manrope', Verdana, sans-serif;
+                          color: #576573;
+                          font-size: 14px;
+                          margin: 0;
+                        "
+                      >
+                        Venue:
+                        <strong style="color: #8b98a6">{{venue_name}}</strong>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        style="
+                          font-family: 'Manrope', Verdana, sans-serif;
+                          color: #576573;
+                          font-size: 14px;
+                          margin: 0;
+                        "
+                      >
+                        Flat Rate:
+                        <strong style="color: #8b98a6">LKR 200</strong>
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- Summary Section with proper padding -->
+                <table
+                  role="presentation"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                  style="background-color: #fff; border-radius: 4px"
+                >
+                  <tr>
+                    <td style="padding: 24px">
+                      <!-- Summary Header -->
+                      <p
+                        style="
+                          font-family: 'Manrope', Verdana, sans-serif;
+                          color: #181f26;
+                          font-size: 16px;
+                          font-weight: bold;
+                          margin: 0;
+                        "
+                      >
+                        Summary
+                      </p>
+                      <p
+                        style="
+                          font-family: 'Manrope', Verdana, sans-serif;
+                          color: #8b98a6;
+                          font-size: 10px;
+                          margin: 4px 0 16px 0;
+                        "
+                      >
+                        (Summary for the revenue made via app / other bookings &
+                        app cancellations)
+                      </p>
+
+                      <hr
+                        style="
+                          border: 0;
+                          border-top: 1px solid #e9edf2;
+                          margin: 0 0 32px 0;
+                        "
+                      />
+
+                      <!-- Date and Fee Structure with proper spacing -->
+                      <table
+                        role="presentation"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                        style="margin-bottom: 16px"
+                      >
+                        <tr>
+                          <td
+                            width="50%"
+                            style="
+                              font-family: 'Manrope', Verdana, sans-serif;
+                              color: #707e8c;
+                              font-size: 12px;
+                              padding-right: 10px;
+                            "
+                          >
+                            Date: <strong>23 July, 2024 12:16:54 PM</strong>
+                          </td>
+                          <td
+                            width="50%"
+                            style="
+                              font-family: 'Manrope', Verdana, sans-serif;
+                              color: #707e8c;
+                              font-size: 12px;
+                            "
+                          >
+                            Fee structure: <strong>Percentage</strong>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <!-- App Bookings Section with proper padding -->
+                      <table
+                        role="presentation"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                        style="
+                          background-color: #f7f9fa;
+                          border-radius: 4px;
+                          margin-bottom: 12px;
+                        "
+                      >
+                        <tr>
+                          <td style="padding: 20px">
+                            <!-- Type Header -->
+                            <p
+                              style="
+                                font-family: 'Manrope', Verdana, sans-serif;
+                                color: #404d59;
+                                font-size: 12px;
+                                font-weight: bold;
+                                margin: 0;
+                              "
+                            >
+                              Type:
+                            </p>
+                            <p
+                              style="
+                                font-family: 'Manrope', Verdana, sans-serif;
+                                color: #707e8c;
+                                font-size: 12px;
+                                margin: 8px 0 0 0;
+                              "
+                            >
+                              App Bookings
+                            </p>
+                            <p
+                              style="
+                                font-family: 'Manrope', Verdana, sans-serif;
+                                color: #707e8c;
+                                font-size: 10px;
+                                margin: 4px 0 13px 0;
+                              "
+                            >
+                              (Bookings made via Playbook app)
+                            </p>
+
+                            <hr
+                              style="
+                                border: 0;
+                                border-top: 1px solid #e9edf2;
+                                margin: 0 0 13px 0;
+                              "
+                            />
+
+                            <!-- Details -->
+                            <table
+                              role="presentation"
+                              cellpadding="0"
+                              cellspacing="0"
+                              width="100%"
+                            >
+                              <tr>
+                                <td style="padding-bottom: 8px">
+                                  <table
+                                    role="presentation"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    width="100%"
+                                  >
+                                    <tr>
+                                      <td
+                                        width="50%"
+                                        style="
+                                          font-family: 'Manrope', Verdana,
+                                            sans-serif;
+                                          color: #404d59;
+                                          font-size: 12px;
+                                          font-weight: bold;
+                                        "
+                                      >
+                                        Revenue Amount:
+                                      </td>
+                                      <td
+                                        width="50%"
+                                        align="right"
+                                        style="
+                                          font-family: 'Manrope', Verdana,
+                                            sans-serif;
+                                          color: #707e8c;
+                                          font-size: 12px;
+                                          font-weight: bold;
+                                        "
+                                      >
+                                        LKR 5000
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-bottom: 8px">
+                                  <table
+                                    role="presentation"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    width="100%"
+                                  >
+                                    <tr>
+                                      <td
+                                        width="50%"
+                                        style="
+                                          font-family: 'Manrope', Verdana,
+                                            sans-serif;
+                                          color: #404d59;
+                                          font-size: 12px;
+                                          font-weight: bold;
+                                        "
+                                      >
+                                        Percentage:
+                                      </td>
+                                      <td
+                                        width="50%"
+                                        align="right"
+                                        style="
+                                          font-family: 'Manrope', Verdana,
+                                            sans-serif;
+                                          color: #707e8c;
+                                          font-size: 12px;
+                                          font-weight: bold;
+                                        "
+                                      >
+                                        5%
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <table
+                                    role="presentation"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    width="100%"
+                                  >
+                                    <tr>
+                                      <td
+                                        width="50%"
+                                        style="
+                                          font-family: 'Manrope', Verdana,
+                                            sans-serif;
+                                          color: #404d59;
+                                          font-size: 12px;
+                                          font-weight: bold;
+                                        "
+                                      >
+                                        Fee Amount:
+                                      </td>
+                                      <td
+                                        width="50%"
+                                        align="right"
+                                        style="
+                                          font-family: 'Manrope', Verdana,
+                                            sans-serif;
+                                          color: #707e8c;
+                                          font-size: 12px;
+                                          font-weight: bold;
+                                        "
+                                      >
+                                        LKR 250
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <!-- Total Section with proper spacing -->
+                      <table
+                        role="presentation"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                        style="margin-top: 24px"
+                      >
+                        <tr>
+                          <td
+                            width="50%"
+                            style="
+                              font-family: 'Manrope', Verdana, sans-serif;
+                              color: #576573;
+                              font-size: 12px;
+                              font-weight: bold;
+                              padding-bottom: 12px;
+                            "
+                          >
+                            Final Transfer to Venue Amount:
+                          </td>
+                          <td
+                            width="50%"
+                            align="right"
+                            style="
+                              font-family: 'Manrope', Verdana, sans-serif;
+                              color: #576573;
+                              font-size: 12px;
+                              font-weight: bold;
+                              padding-bottom: 12px;
+                            "
+                          >
+                            LKR 350005
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">
+                            <hr
+                              style="
+                                border: 0;
+                                border-top: 1px solid #e9edf2;
+                                margin: 0 0 12px 0;
+                              "
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            width="50%"
+                            style="
+                              font-family: 'Manrope', Verdana, sans-serif;
+                              color: #181f26;
+                              font-size: 14px;
+                              font-weight: bold;
+                            "
+                          >
+                            Total Revenue:
+                          </td>
+                          <td
+                            width="50%"
+                            align="right"
+                            style="
+                              font-family: 'Manrope', Verdana, sans-serif;
+                              color: #181f26;
+                              font-size: 14px;
+                              font-weight: bold;
+                            "
+                          >
+                            LKR 350
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- Footer Section with proper spacing -->
+                <table
+                  role="presentation"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                  style="margin-top: 28px"
+                >
+                  <tr>
+                    <td style="padding-bottom: 31px">
+                      <p
+                        style="
+                          font-family: 'Manrope', Verdana, sans-serif;
+                          color: #8b98a6;
+                          font-size: 14px;
+                          line-height: 1.5;
+                          margin: 0;
+                        "
+                      >
+                        For more immediate support contact our team via, phone:
+                        <strong style="color: #707e8c">+94 76 234 7820</strong>
+                        or email:
+                        <strong style="color: #707e8c"
+                          >pbsupport@playbook.com</strong
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-bottom: 47px">
+                      <p
+                        style="
+                          font-family: 'Manrope', Verdana, sans-serif;
+                          color: #8b98a6;
+                          font-size: 14px;
+                          margin: 0;
+                        "
+                      >
+                        For more information refer to our
+                        <a
+                          href="#"
+                          style="color: #8b98a6; text-decoration: underline"
+                          >terms & conditions</a
+                        >
+                        and
+                        <a
+                          href="#"
+                          style="color: #8b98a6; text-decoration: underline"
+                          >Privacy Policy</a
+                        >.
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p
+                        style="
+                          font-family: 'Manrope', Verdana, sans-serif;
+                          color: #2c3640;
+                          font-size: 14px;
+                          font-weight: bold;
+                          margin: 0;
+                        "
+                      >
+                        Best Regards,
+                      </p>
+                      <p style="font-family: 'Manrope', Verdana, sans-serif;
+                      <p
+                        style="
+                          font-family: 'Manrope', Verdana, sans-serif;
+                          color: #8b98a6;
+                          font-size: 13px;
+                          margin: 0;
+                        "
+                      >
+                        Playbook team
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>

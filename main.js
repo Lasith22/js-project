@@ -56,26 +56,4 @@ const users = fetch('https://jsonplaceholder.typicode.com/todos/1');
 //     }
 //   });
 
-
-const products = [
-  {
-    name:'Product1',
-    desc:'This is my sample product 1',
-    price:20
-  },
-  {
-    name:'Product1',
-    desc:'This is my sample product 1',
-    price:20
-  }
-]
-
-//display products
-function getProducts(){
-  setTimeout(()=>{
-    let outPut = '';
-    products.forEach((product)=>{
-      outPut = product
-    })
-  })
-}
+ 

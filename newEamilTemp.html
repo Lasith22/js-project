@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlayBook Email</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Base styles */
+      body {
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+        font-family: 'Manrope', Verdana, sans-serif;
+      }
+
+      /* Reset styles for email clients */
+      img {
+        border: 0;
+        height: auto;
+        line-height: 100%;
+        outline: none;
+        text-decoration: none;
+        -ms-interpolation-mode: bicubic;
+      }
+
+      table {
+        border-collapse: collapse !important;
+      }
+
+      /* Container styles */
+      .main-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* Responsive styles */
+      @media only screen and (max-width: 600px) {
+        .hide-on-mobile {
+          display: none !important;
+        }
+        .show-on-mobile {
+          display: block !important;
+        }
+        .mobile-padding {
+          padding: 20px !important;
+        }
+        .mobile-text {
+          font-size: 14px !important;
+        }
+        .main-container {
+          padding: 10px !important;
+        }
+        .mobile-stack {
+          flex-direction: column !important;
+          gap: 8px !important;
+          align-items: flex-start !important;
+        }
+      }
+
+      @media only screen and (min-width: 601px) {
+        .hide-on-desktop {
+          display: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="margin: 0 auto; max-width: 600px; width: 100%">
+      <!-- main logo and header section -->
+      <div
+        style="
+          padding: 40px 40px 60px 40px;
+          background-color: #2352d8;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          border-radius: 16px 16px 0px 0px;
+        "
+      >
+        <!-- PlayBook Logo -->
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/playbook-f237a.appspot.com/o/image.png?alt=media&token=4b202fcc-2043-4e90-a367-43a2fa27930e"
+          alt="PlayBook Logo"
+          style="max-width: 100%; height: auto"
+        />
+        <p
+          style="
+            font-family: 'Manrope', Verdana, sans-serif;
+            color: #fff;
+            font-size: 24px;
+            margin-top: 40px;
+            margin-bottom: 0px;
+          "
+        >
+          Email Confirmation
+        </p>
+
+        <p
+          style="
+            font-family: 'Manrope', Verdana, sans-serif;
+            color: #f7f9fa;
+            font-size: 14px;
+            margin-top: 0px 0px 0px 0px;
+            text-align: center;
+            margin-top: 8px;
+          "
+        >
+          You have successfully completed the venue payout process. You can
+          check your venue payout details below.
+        </p>
+      </div>
+
+      <!-- email content section -->
+      <div
+        style="
+          background-color: #f7f9fa;
+          padding: 60px 40px 60px 40px;
+          display: flex;
+          flex-direction: column;
+        "
+      >
+        <p
+          style="
+            font-family: 'Manrope', Verdana, sans-serif;
+            color: #181f26;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 24px;
+          "
+        >
+          Hi (Venue owner name),
+        </p>
+
+        <p
+          style="
+            font-family: 'Manrope', Verdana, sans-serif;
+            color: #8b98a6;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 24px;
+          "
+        >
+          Lorem ipsum dolor sit amet consectetur. Nunc varius posuere a
+          facilisis pellentesque sagittis. Consectetur elit et ac at urna metus
+          mauris tellus. Maecenas curabitur sit sed sit tellus. Nisl gravida sed
+          aenean morbi. Eget mauris eu elit nunc amet. Habitasse quis
+          consectetur in mi semper.
+        </p>
+
+        <!-- venue name and flat rate -->
+        <div style="display: flex; flex-direction: column">
+          <div>
+            <p
+              style="
+                font-family: 'Manrope', Verdana, sans-serif;
+                color: #576573;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: normal;
+                margin: 0;
+              "
+            >
+              Venue:
+              <strong style="color: #8b98a6">{{venue_name}}</strong>
+            </p>
+            <p
+              style="
+                font-family: 'Manrope', Verdana, sans-serif;
+                color: #576573;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: normal;
+                margin-top: 4px;
+              "
+            >
+              Flat Rate:
+              <strong style="color: #8b98a6">LKR 200</strong>
+            </p>
+          </div>
+        </div>
+
+        <hr style="border: 1px solid #c7d0d9; margin: 24px 0px 24px 0px" />
+        <!-- 
+        summery section -->
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            padding: 24px;
+            background-color: #fff;
+          "
+        >
+          <p
+            style="
+              font-family: 'Manrope', Verdana, sans-serif;
+              color: #181f26;
+              font-size: 16px;
+              font-weight: 700;
+              line-height: 16px;
+              margin: 0;
+            "
+          >
+            Summary
+          </p>
+          <p
+            style="
+              font-family: 'Manrope', Verdana, sans-serif;
+              color: #8b98a6;
+              font-size: 10px;
+              line-height: 16px;
+              margin: 0;
+            "
+          >
+            (Summary for the revenue made via app / other bookings & app
+            cancellations)
+          </p>
+          <hr style="border: 1px solid #e9edf2; margin: 16px 0px 32px 0px" />
+
+          <!-- date and fee structure -->
+          <div
+            class="mobile-stack"
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <p
+              style="
+                font-family: 'Manrope', Verdana, sans-serif;
+                color: #707e8c;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: normal;
+                margin: 0;
+              "
+            >
+              Date:
+              <strong style="font-weight: 700"
+                >23 July, 2024 12:16:54 PM</strong
+              >
+            </p>
+            <p
+              style="
+                font-family: 'Manrope', Verdana, sans-serif;
+                color: #707e8c;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: normal;
+                margin: 0;
+              "
+            >
+              Fee Structure:
+              <strong style="font-weight: 700"> Percentage</strong>
+            </p>
+          </div>
+
+          <!-- table section for desktop -->
+          <table
+            role="presentation"
+            width="100%"
+            cellpadding="0"
+            cellspacing="0"
+            style="
+              border-collapse: collapse;
+              width: 100%;
+              font-family: 'Manrope', Verdana, sans-serif;
+              margin-top: 16px;
+            "
+            class="hide-on-mobile"
+          >
+            <!-- Table Header -->
+            <thead>
+              <tr style="background-color: #f7f9fa">
+                <th
+                  style="
+                    padding-left: 24px;
+                    padding-top: 14px;
+                    padding-bottom: 14px;
+                    width: 40%;
+                    font-size: 12px;
+                    font-weight: 700;
+                    color: #404d59;
+                    text-align: left;
+                  "
+                >
+                  Type
+                </th>
+                <th
+                  style="
+                    padding-top: 14px;
+                    padding-bottom: 14px;
+                    width: 20%;
+                    font-size: 12px;
+                    font-weight: bold;
+                    color: #404d59;
+                    text-align: left;
+                  "
+                >
+                  Revenue Amount
+                </th>
+                <th
+                  style="
+                    padding-top: 14px;
+                    padding-bottom: 14px;
+                    width: 20%;
+                    font-size: 12px;
+                    font-weight: bold;
+                    color: #404d59;
+                    text-align: left;
+                  "
+                >
+                  Percentage
+                </th>
+                <th
+                  style="
+                    padding: 14px 0;
+                    width: 20%;
+                    font-size: 12px;
+                    font-weight: bold;
+                    color: #404d59;
+                    text-align: left;
+                  "
+                >
+                  Fee Amount
+                </th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <!-- 1st row -->
+              <tr style="border-bottom: 1px solid #e9edf2">
+                <td
+                  style="
+                    padding: 14px 24px;
+                    font-size: 13px;
+                    color: #707e8c;
+                    font-weight: 600;
+                    line-height: normal;
+                    width: 40%;
+                  "
+                >
+                  App Bookings<br />
+                  <span
+                    style="color: #707e8c; font-size: 10px; font-weight: 500"
+                    >(Bookings made via Playbook app)</span
+                  >
+                </td>
+                <td
+                  style="
+                    padding: 14px 0;
+                    font-size: 13px;
+                    color: #707e8c;
+                    font-weight: 700;
+                    line-height: normal;
+                    width: 20%;
+                  "
+                >
+                  LKR 5000
+                </td>
+                <td
+                  style="
+                    padding: 14px 0;
+                    font-size: 13px;
+                    color: #707e8c;
+                    font-weight: 700;
+                    line-height: normal;
+                    width: 20%;
+                  "
+                >
+                  2%
+                </td>
+                <td
+                  style="
+                    padding: 14px 0;
+                    font-size: 13px;
+                    color: #707e8c;
+                    font-weight: 700;
+                    line-height: normal;
+                    width: 20%;
+                  "
+                >
+                  LKR 100
+                </td>
+              </tr>
+
+              <!-- 2nd row -->
+              <tr style="border-bottom: 1px solid #e9edf2">
+                <td
+                  style="
+                    padding: 14px 24px;
+                    font-size: 13px;
+                    color: #707e8c;
+                    font-weight: 600;
+                    line-height: normal;
+                    width: 40%;
+                  "
+                >
+                  Other Bookings<br />
+                  <span
+                    style="color: #707e8c; font-size: 10px; font-weight: 500"
+                    >(Bookings made via admin /other)</span
+                  >
+                </td>
+                <td
+                  style="
+                    padding: 14px 0;
+                    font-size: 13px;
+                    color: #707e8c;
+                    font-weight: 700;
+                    line-height: normal;
+                    width: 20%;
+                  "
+                >
+                  LKR 5000
+                </td>
+                <td
+                  style="
+                    padding: 14px 0;
+                    font-size: 13px;
+                    color: #707e8c;
+                    font-weight: 700;
+                    line-height: normal;
+                    width: 20%;
+                  "
+                >
+                  0%
+                </td>
+                <td
+                  style="
+                    padding: 14px 0;
+                    font-size: 13px;
+                    color: #707e8c;
+                    font-weight: 700;
+                    line-height: normal;
+                    width: 20%;
+                  "
+                >
+                  LKR 0
+                </td>
+              </tr>
+
+              <!-- 3rd row -->
+              <tr style="border-bottom: 1px solid #e9edf2">
+                <td
+                  style="
+                    padding: 14px 24px;
+                    font-size: 13px;
+                    color: #707e8c;
+                    font-weight: 600;
+                    line-height: normal;
+                    width: 40%;
+                  "
+                >
+                  App Cancellations<br />
+                  <span
+                    style="color: #707e8c; font-size: 10px; font-weight: 500"
+                    >(Bookings made via booking cancellations)</span
+                  >
+                </td>
+                <td
+                  style="
+                    padding: 14px 0;
+                    font-size: 13px;
+                    color: #707e8c;
+                    font-weight: 700;
+                    line-height: normal;
+                    width: 20%;
+                  "
+                >
+                  LKR 5000
+                </td>
+                <td
+                  style="
+                    padding: 14px 0;
+                    font-size: 13px;
+                    color: #707e8c;
+                    font-weight: 700;
+                    line-height: normal;
+                    width: 20%;
+                  "
+                >
+                  5%
+                </td>
+                <td
+                  style="
+                    padding: 14px 0;
+                    font-size: 13px;
+                    color: #707e8c;
+                    font-weight: 700;
+                    line-height: normal;
+                    width: 20%;
+                  "
+                >
+                  LKR 250
+                </td>
+              </tr>
+
+              <!-- 4th row -->
+              <tr style="border-bottom: 1px solid #e9edf2">
+                <td style="padding: 14px 0"></td>
+                <td
+                  style="
+                    padding: 14px 0;
+                    font-size: 12px;
+                    color: #576573;
+                    font-weight: 500;
+                    line-height: normal;
+                  "
+                >
+                  Final Transfer to Venue Amount :
+                </td>
+                <td style="padding: 14px 0"></td>
+                <td
+                  style="
+                    padding: 14px 0;
+                    font-size: 12px;
+                    color: #576573;
+                    font-weight: 600;
+                    line-height: normal;
+                    width: 20%;
+                  "
+                >
+                  LKR 350
+                </td>
+              </tr>
+
+              <!-- 5th row -->
+              <tr>
+                <td style="padding: 14px 0"></td>
+                <td
+                  style="
+                    padding: 14px 0;
+                    font-size: 14px;
+                    color: #181f26;
+                    font-weight: 700;
+                    line-height: normal;
+                  "
+                >
+                  Total Revenue:
+                </td>
+                <td style="padding: 14px 0"></td>
+                <td
+                  style="
+                    padding: 14px 0;
+                    font-size: 12px;
+                    color: #181f26;
+                    font-weight: 700;
+                    line-height: normal;
+                  "
+                >
+                  LKR 350
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- table section for mobile -->
+          <div
+            style="
+              margin-top: 16px;
+              padding: 20px 16px;
+              border-radius: 4px;
+              background-color: #f7f9fa;
+              font-family: 'Manrope', Verdana, sans-serif;
+            "
+            class="hide-on-desktop"
+          >
+            <!-- Type Header -->
+            <p
+              style="
+                margin: 0;
+                color: #404d59;
+                font-size: 12px;
+                line-height: 16px;
+                font-weight: 700;
+              "
+            >
+              Type:
+            </p>
+
+            <!-- Content Section -->
+            <div style="margin-top: 8px">
+              <p
+                style="
+                  margin: 0;
+                  color: #707e8c;
+                  font-size: 12px;
+                  line-height: normal;
+                  font-weight: 600;
+                "
+              >
+                App Bookings
+              </p>
+              <p
+                style="
+                  margin: 0;
+                  color: #707e8c;
+                  font-size: 10px;
+                  line-height: normal;
+                  font-weight: bold;
+                "
+              >
+                (Bookings made via Playbook app)
+              </p>
+
+              <!-- Divider -->
+              <hr
+                style="
+                  margin: 13px 0;
+                  border: none;
+                  background-color: #e9edf2;
+                  height: 1px;
+                "
+              />
+
+              <!-- Revenue Row -->
+              <div
+                style="display: flex; justify-content: space-between; margin: 0"
+              >
+                <p
+                  style="
+                    margin: 0;
+                    width: 50%;
+                    color: #404d59;
+                    font-size: 12px;
+                    line-height: 16px;
+                    font-weight: bold;
+                    text-align: left;
+                  "
+                >
+                  Revenue Amount:
+                </p>
+                <p
+                  style="
+                    margin: 0;
+                    width: 50%;
+                    color: #707e8c;
+                    font-size: 12px;
+                    line-height: 16px;
+                    font-weight: bold;
+                    text-align: right;
+                  "
+                >
+                  LKR 5000
+                </p>
+              </div>
+
+              <!-- Percentage Row -->
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  margin: 8px 0;
+                "
+              >
+                <p
+                  style="
+                    margin: 0;
+                    width: 50%;
+                    color: #404d59;
+                    font-size: 12px;
+                    line-height: 16px;
+                    font-weight: bold;
+                    text-align: left;
+                  "
+                >
+                  Percentage:
+                </p>
+                <p
+                  style="
+                    margin: 0;
+                    width: 50%;
+                    color: #707e8c;
+                    font-size: 12px;
+                    line-height: 16px;
+                    font-weight: bold;
+                    text-align: right;
+                  "
+                >
+                  5%
+                </p>
+              </div>
+
+              <!-- Fee Amount Row -->
+              <div
+                style="display: flex; justify-content: space-between; margin: 0"
+              >
+                <p
+                  style="
+                    margin: 0;
+                    width: 50%;
+                    color: #404d59;
+                    font-size: 12px;
+                    line-height: 16px;
+                    font-weight: bold;
+                    text-align: left;
+                  "
+                >
+                  Fee Amount:
+                </p>
+                <p
+                  style="
+                    margin: 0;
+                    width: 50%;
+                    color: #707e8c;
+                    font-size: 12px;
+                    line-height: 16px;
+                    font-weight: bold;
+                    text-align: right;
+                  "
+                >
+                  LKR 100000000
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2nd card for mobile -->
+          <div
+            style="
+              margin-top: 16px;
+              padding: 20px 16px;
+              border-radius: 4px;
+              background-color: #f7f9fa;
+              font-family: 'Manrope', Verdana, sans-serif;
+            "
+            class="hide-on-desktop"
+          >
+            <!-- Type Header -->
+            <p
+              style="
+                margin: 0;
+                color: #404d59;
+                font-size: 12px;
+                line-height: 16px;
+                font-weight: 700;
+              "
+            >
+              Type:
+            </p>
+
+            <!-- Content Section -->
+            <div style="margin-top: 8px">
+              <p
+                style="
+                  margin: 0;
+                  color: #707e8c;
+                  font-size: 12px;
+                  line-height: normal;
+                  font-weight: 600;
+                "
+              >
+                App Bookings
+              </p>
+              <p
+                style="
+                  margin: 0;
+                  color: #707e8c;
+                  font-size: 10px;
+                  line-height: normal;
+                  font-weight: bold;
+                "
+              >
+                (Bookings made via Playbook app)
+              </p>
+
+              <!-- Divider -->
+              <hr
+                style="
+                  margin: 13px 0;
+                  border: none;
+                  background-color: #e9edf2;
+                  height: 1px;
+                "
+              />
+
+              <!-- Revenue Row -->
+              <div
+                style="display: flex; justify-content: space-between; margin: 0"
+              >
+                <p
+                  style="
+                    margin: 0;
+                    width: 50%;
+                    color: #404d59;
+                    font-size: 12px;
+                    line-height: 16px;
+                    font-weight: bold;
+                    text-align: left;
+                  "
+                >
+                  Revenue Amount:
+                </p>
+                <p
+                  style="
+                    margin: 0;
+                    width: 50%;
+                    color: #707e8c;
+                    font-size: 12px;
+                    line-height: 16px;
+                    font-weight: bold;
+                    text-align: right;
+                  "
+                >
+                  LKR 5000
+                </p>
+              </div>
+
+              <!-- Percentage Row -->
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  margin: 8px 0;
+                "
+              >
+                <p
+                  style="
+                    margin: 0;
+                    width: 50%;
+                    color: #404d59;
+                    font-size: 12px;
+                    line-height: 16px;
+                    font-weight: bold;
+                    text-align: left;
+                  "
+                >
+                  Percentage:
+                </p>
+                <p
+                  style="
+                    margin: 0;
+                    width: 50%;
+                    color: #707e8c;
+                    font-size: 12px;
+                    line-height: 16px;
+                    font-weight: bold;
+                    text-align: right;
+                  "
+                >
+                  5%
+                </p>
+              </div>
+
+              <!-- Fee Amount Row -->
+              <div
+                style="display: flex; justify-content: space-between; margin: 0"
+              >
+                <p
+                  style="
+                    margin: 0;
+                    width: 50%;
+                    color: #404d59;
+                    font-size: 12px;
+                    line-height: 16px;
+                    font-weight: bold;
+                    text-align: left;
+                  "
+                >
+                  Fee Amount:
+                </p>
+                <p
+                  style="
+                    margin: 0;
+                    width: 50%;
+                    color: #707e8c;
+                    font-size: 12px;
+                    line-height: 16px;
+                    font-weight: bold;
+                    text-align: right;
+                  "
+                >
+                  LKR 100000000
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3rd card for mobile   -->
+          <div
+            style="
+              margin-top: 16px;
+              padding: 20px 16px;
+              border-radius: 4px;
+              background-color: #f7f9fa;
+              font-family: 'Manrope', Verdana, sans-serif;
+            "
+            class="hide-on-desktop"
+          >
+            <!-- Type Header -->
+            <p
+              style="
+                margin: 0;
+                color: #404d59;
+                font-size: 12px;
+                line-height: 16px;
+                font-weight: 700;
+              "
+            >
+              Type:
+            </p>
+
+            <!-- Content Section -->
+            <div style="margin-top: 8px">
+              <p
+                style="
+                  margin: 0;
+                  color: #707e8c;
+                  font-size: 12px;
+                  line-height: normal;
+                  font-weight: 600;
+                "
+              >
+                App Bookings
+              </p>
+              <p
+                style="
+                  margin: 0;
+                  color: #707e8c;
+                  font-size: 10px;
+                  line-height: normal;
+                  font-weight: bold;
+                "
+              >
+                (Bookings made via Playbook app)
+              </p>
+
+              <!-- Divider -->
+              <hr
+                style="
+                  margin: 13px 0;
+                  border: none;
+                  background-color: #e9edf2;
+                  height: 1px;
+                "
+              />
+
+              <!-- Revenue Row -->
+              <div
+                style="display: flex; justify-content: space-between; margin: 0"
+              >
+                <p
+                  style="
+                    margin: 0;
+                    width: 50%;
+                    color: #404d59;
+                    font-size: 12px;
+                    line-height: 16px;
+                    font-weight: bold;
+                    text-align: left;
+                  "
+                >
+                  Revenue Amount:
+                </p>
+                <p
+                  style="
+                    margin: 0;
+                    width: 50%;
+                    color: #707e8c;
+                    font-size: 12px;
+                    line-height: 16px;
+                    font-weight: bold;
+                    text-align: right;
+                  "
+                >
+                  LKR 5000
+                </p>
+              </div>
+
+              <!-- Percentage Row -->
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  margin: 8px 0;
+                "
+              >
+                <p
+                  style="
+                    margin: 0;
+                    width: 50%;
+                    color: #404d59;
+                    font-size: 12px;
+                    line-height: 16px;
+                    font-weight: bold;
+                    text-align: left;
+                  "
+                >
+                  Percentage:
+                </p>
+                <p
+                  style="
+                    margin: 0;
+                    width: 50%;
+                    color: #707e8c;
+                    font-size: 12px;
+                    line-height: 16px;
+                    font-weight: bold;
+                    text-align: right;
+                  "
+                >
+                  5%
+                </p>
+              </div>
+
+              <!-- Fee Amount Row -->
+              <div
+                style="display: flex; justify-content: space-between; margin: 0"
+              >
+                <p
+                  style="
+                    margin: 0;
+                    width: 50%;
+                    color: #404d59;
+                    font-size: 12px;
+                    line-height: 16px;
+                    font-weight: bold;
+                    text-align: left;
+                  "
+                >
+                  Fee Amount:
+                </p>
+                <p
+                  style="
+                    margin: 0;
+                    width: 50%;
+                    color: #707e8c;
+                    font-size: 12px;
+                    line-height: 16px;
+                    font-weight: bold;
+                    text-align: right;
+                  "
+                >
+                  LKR 100000000
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- total revenue section -->
+          <table
+            role="presentation"
+            cellpadding="0"
+            cellspacing="0"
+            style="margin-top: 24px"
+            class="hide-on-desktop"
+            width="100%"
+          >
+            <tr>
+              <td
+                width="50%"
+                style="
+                  font-family: 'Manrope', Verdana, sans-serif;
+                  color: #576573;
+                  font-size: 12px;
+                  font-weight: bold;
+                  padding-bottom: 12px;
+                "
+              >
+                Final Transfer to Venue Amount:
+              </td>
+              <td
+                width="50%"
+                align="right"
+                style="
+                  font-family: 'Manrope', Verdana, sans-serif;
+                  color: #576573;
+                  font-size: 12px;
+                  font-weight: bold;
+                  padding-bottom: 12px;
+                "
+              >
+                LKR 3500
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <hr
+                  style="
+                    border: 0;
+                    border-top: 1px solid #e9edf2;
+                    margin: 0 0 12px 0;
+                  "
+                />
+              </td>
+            </tr>
+            <tr>
+              <td
+                width="50%"
+                style="
+                  font-family: 'Manrope', Verdana, sans-serif;
+                  color: #181f26;
+                  font-size: 14px;
+                  font-weight: bold;
+                "
+              >
+                Total Revenue:
+              </td>
+              <td
+                width="50%"
+                align="right"
+                style="
+                  font-family: 'Manrope', Verdana, sans-serif;
+                  color: #181f26;
+                  font-size: 14px;
+                  font-weight: bold;
+                "
+              >
+                LKR 350
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- footer -->
+        <div
+          style="margin-top: 24px; font-family: 'Manrope', Verdana, sans-serif"
+        >
+          <!-- Support Contact Info -->
+          <div style="padding-bottom: 31px">
+            <p
+              style="
+                color: #8b98a6;
+                font-size: 14px;
+                line-height: 1.5;
+                margin: 0;
+              "
+            >
+              For more immediate support contact our team via, phone:
+              <strong style="color: #707e8c">+94 76 234 7820</strong>
+              or email:
+              <strong style="color: #707e8c">pbsupport@playbook.com</strong>
+            </p>
+          </div>
+
+          <!-- Terms and Privacy Links -->
+          <div style="padding-bottom: 47px">
+            <p style="color: #8b98a6; font-size: 14px; margin: 0">
+              For more information refer to our
+              <a href="#" style="color: #8b98a6; text-decoration: underline"
+                >terms & conditions</a
+              >
+              and
+              <a href="#" style="color: #8b98a6; text-decoration: underline"
+                >Privacy Policy</a
+              >.
+            </p>
+          </div>
+
+          <!-- Signature -->
+          <div>
+            <p
+              style="
+                color: #2c3640;
+                font-size: 14px;
+                font-weight: bold;
+                margin: 0;
+              "
+            >
+              Best Regards,
+            </p>
+            <p style="color: #8b98a6; font-size: 13px; margin: 0">
+              Playbook team
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
