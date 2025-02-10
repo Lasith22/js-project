@@ -4,19 +4,38 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PlayBook Email</title>
-    <!--[if !mso]><!-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <!--<![endif]-->
+
+    @import
+    url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');s
     <style>
       /* Base styles */
+      * {
+        font-family: 'Manrope', 'Segoe UI', sans-serif;
+      }
       body {
         margin: 0;
         padding: 0;
-        font-family: 'Manrope', Verdana, sans-serif;
+        font-family: 'Manrope', Arial, sans-serif !important;
         background-color: #ffffff;
+      }
+
+      /* Apply font-family to all text elements explicitly */
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      span,
+      a,
+      td,
+      th {
+        font-family: 'Manrope', Arial, sans-serif !important;
+      }
+      /* Force Outlook to use Arial */
+      [style*='Manrope'] {
+        font-family: Arial, sans-serif !important;
       }
 
       /* Reset styles for email clients */
@@ -67,7 +86,7 @@
       }
     </style>
   </head>
-  <body>
+  <body style="font-family: 'Manrope', Arial, sans-serif !important">
     <table
       role="presentation"
       width="100%"
